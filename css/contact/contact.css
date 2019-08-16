@@ -1,0 +1,29 @@
+
+@media only screen and (max-width: 770px) {
+    .pagination{
+        display: auto;
+    }
+    .arrows{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .pagination{
+        display: none;
+    }
+    .arrows{
+        display: auto;
+    }
+}
+.pagination{
+    display: none;
+}
+
+.arrows{
+    display: auto;
+}
+.Info{
+    background-color: #f1f1f1;
+    padding-top: 20px;
+    padding-left: 20px;
+}

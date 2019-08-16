@@ -1,0 +1,32 @@
+@media (max-width: 1000px) {
+    .google{  
+        height: 700px;
+    }
+}
+ 
+.google{  
+    height: 500px;
+}
+@media only screen and (max-width: 770px) {
+    .google{  
+        height: 900px;
+    }
+    .starsCol img{
+        width: 70px;
+    }
+}
+.starsCol img{
+    width: 60px;
+}
+@media (min-width: 100px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 50%;
+    max-width: 100%; } }
+    @media (min-width: 700px) {
+        .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%; } }
+     .carousel-multi-item-2 .card img {
+        border-radius: 2px; }

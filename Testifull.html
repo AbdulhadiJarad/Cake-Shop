@@ -1,0 +1,236 @@
+<html ng-app='app' ng-controller='ctrl'>
+<head>
+  <title>
+    Gallary
+  </title>
+  <link rel="shortcut icon" href="icon/cake-slice.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main/main.css">
+  <link rel="stylesheet" href="css/Testifull//Testifull.css">
+  <link rel="stylesheet" href="css/header/header.css">
+  <link rel="stylesheet" href="css/libs/alpha.bootstrap.css">
+  <link rel="stylesheet" href="css/libs/maxcdn.bootstrapcdn.4.0.4.4.css">
+  <link rel="stylesheet" href="css/libs/stackpath.bootstrapcdn.css">
+  <link rel="stylesheet" href="css/libs/animate.css">
+  <script src="js/lib/bootstrap/stackpath.bootstrapcdn.min.js"></script>
+  <script src="js/lib/bootstrap/stackpath.bootstrapcdn.min.js"></script>
+  <script src="js/lib/jquery/jquery.min.js"></script>
+  <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="position: fixed;width: 100%;z-index: 100">
+    <div style="" id='cssmenu'>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+
+        <li><a href='#Footer'>About</a></li>
+
+        <li><a href='contact.html'>Contact</a></li>
+
+        <li><a href='Testifull.html'>Gallary</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+  <p style="font-size: 29px;" class="text-center mx-auto d-block">See The Latest </p>
+  <hr class="style-eight" style="width: 40%;">
+  <br>
+  <div style="background-color: #1d1d1d;width: 100%;" class="row  google  mx-auto">
+    <div style="" class="col-lg-7 col-md-7 col-sm-12 align-items-center row  mx-auto text-center d-block">
+      <div class="col-12  mx-auto text-center d-block">
+        <img style="height: 400px;" class="col-12 justify-content-center pt-3 mx-auto text-center d-block"
+          src="{{clicked.img}}" alt="">
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      <p style="color: white;margin-top: 40px;font-size: 29px;" class="col-12 harlow d-block text-center ">
+        {{clicked.title}} Cake</p>
+      <hr style="width: 40%;border: solid 1px white">
+      <p style="color: white;font-size: 26px;" class="col-12 d-block">Ingredients:</p>
+      <p>
+        <ul style="color: white">
+          <li>Lorem ipsum dolor.</li>
+          <li>sit amet consectetur adipisicing elit.</li>
+          <li> Accusantium reiciendis nihil est ullam id quaerat.</li>
+          <li>officiis mollitia suscipit nesciunt atque molestias.</li>
+          <li>esse quod corporis iste aliquam minima.</li>
+        </ul>
+      </p>
+      <div class="mx-auto col-12 starsCol">
+        <p style="color: white;font-size: 26px;" class="col d-inline">Rate:</p>
+        <img ng-repeat='star in dataset | limitTo:randomStars' style="" class="col-2 col-md-4"
+          src="images/143515.svg">
+        <img ng-repeat='star in dataset | limitTo:5-randomStars' style="" class="col-2 col-md-4"
+          src="images/149222.svg">
+      </div>
+      <br>
+      <img src="icon/close-envelope (2).png" alt="">
+      <p style="color: white" class="d-inline NumberFont"> +963 959202239</p>
+
+      <img src="icon/telephone-receiver-with-circular-arrows.png" alt="">
+      <p style="color: white" class="d-inline NumberFont"> +963 959202239</p>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="black-text" href="#multi-item-example" data-slide="prev"><img
+          src="icon/arrowhead-thin-outline-to-the-left.png" alt=""></a>
+      <a class="black-text float-right" href="#multi-item-example" data-slide="next"> <img
+          src="icon/arrow-point-to-right.png" alt=""></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active row mx-auto">
+
+        <div style="cursor: pointer" ng-click='clickedFun(info)' ng-repeat='info in Gallary | limitTo:4:0'
+          class="col-md-3 mb-3 ">
+          <div class="card">
+            <img style="height: 150px;" class="img-fluid" src="{{info.img}}" alt="Card image cap">
+          </div>
+        </div>
+
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div style="cursor: pointer" ng-click='clickedFun(info)' ng-repeat='info in Gallary | limitTo:4:4'
+          class="col-md-3 mb-3">
+          <div class="card ">
+            <img style="height: 150px;" class="img-fluid " src="{{info.img}}" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+      <!--/.Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+
+        <div style="cursor: pointer" ng-click='clickedFun(info)' ng-repeat='info in Gallary | limitTo:4:8'
+          class="col-md-3 mb-3 col-3">
+          <div class="card">
+            <img style="height: 150px;" class="img-fluid" src="{{info.img}}" alt="Card image cap">
+          </div>
+        </div>
+
+      </div>
+      <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+  </div>
+  <div style="background-color: #1b1616;" id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+    data-interval="2500">
+    <img class="Quites" style="" src="icon/quote-left.png" alt="">
+    <div style="font-size: 25px;padding-top: 9%;font-family:'Times New Roman'" class="carousel-inner text-light">
+      <div class="carousel-item active text-center">
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</i></p>
+        <figcaption class='figure-caption'><i>someone- Engineer</i></figcaption>
+      </div>
+      <div class="carousel-item text-center">
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</i></p>
+        <figcaption class='figure-caption'><i>A friend- baker</i></figcaption>
+      </div>
+      <div class="carousel-item text-center">
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</i></p>
+        <figcaption class='figure-caption'><i>UN - Organization</i></figcaption>
+      </div>
+    </div>
+    <img style="margin-left: 75%;" src="icon/right-quote-sign.png" alt="">
+  </div>
+  <footer id="Footer" style="background-color: #080303eb;" class="footer h-500">
+
+    <div style="padding-top: 20px;" class="d-sm-inline d-md-flex">
+      <div class="col-md-4 mx-sm-auto col-sm-12">
+        <div class="">
+          <h5 class="text-light text-center">
+            <img class="" style="width: 8%;" src="icon/connection.png"> Stay Connected
+          </h5>
+          <br>
+          <p style="padding-left: 10px;" class="text text-light mx-auto text-center w-75">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed dolor eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div style="" class="mx-auto text-center">
+          <div class="input-group col-11 text-center mx-auto">
+            <input style="text-align: left" type="text" class="form-control col-6 mx-auto" id="inlineFormInputGroup"
+              placeholder="Email">
+            <button class="btn btn-light col-5">Submate</button>
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <div class="col-md-3  mx-sm-auto  col-sm-10 text-center">
+        <h5 class="text-light">
+          <img class="" style="" src="icon/policy.png">Our Story
+        </h5>
+        <br>
+        <p class="text text-light w-75 text-center sm-mx-auto mx-auto">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.</p>
+      </div>
+      <br>
+      <div class="col-md-2  mx-sm-auto  col-sm-10 text-center">
+        <h5 style="color: white" class="text-center">
+          Certified
+        </h5>
+        <img class=" mx-auto" style="background-color: white;border-radius: 50%;margin-top: 10px;width: 20%;"
+          src="icon/37011.svg">
+        <p style="color: white"><br>Donate with Bitcoin</p>
+      </div>
+      <br>
+      <div class="col-md-3  mx-sm-auto  col-sm-10 text-center">
+        <h5 class="text-light">
+          <img style="width: 7%;background-color: white;border-radius: 50%;"
+            src="icon/87932.svg"> Our Task
+        </h5>
+        <br>
+        <div class="row">
+          <div class="col">
+            <a href="">Protifilio</a><br>
+            <a href="">Events</a><br>
+            <a href="">Parenters</a><br>
+            <a href="">Shops</a>
+          </div>
+          <div class="col">
+            <a href="">Companies</a><br>
+            <a href="">Others</a><br>
+            <a href="">Global</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="border:white solid 1px;width: 50%;">
+    <p class="text-center h4 text-light">
+      <i> Coded & Designd By &copy; Abdulhadi Jarad</i>
+    </p>
+    <br>
+  </footer>
+
+  <!--/.Carousel Wrapper-->
+  <script src="js/lib/wow.min.js"></script>
+  <script src="js/lib/angular/ajax.googleapis.angular.min.js"></script>
+  <script src="js/lib/angular/ajax.googleapis.angular.area.min.js"></script>
+  <script src="js/lib/angular/ajax.googleapis.angular.rout.js"></script>
+  <script src="js/TestifullAngular.js"></script>
+  <script src="js/cackShope.js"></script>
+  <script src="js/script.js"></script>
+  <script>new WOW().init();</script>
+</body>
+
+</html>

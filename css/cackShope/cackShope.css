@@ -1,0 +1,298 @@
+.icone{
+    position: absolute;
+    width:5%;
+    bottom:9px;
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+}
+.icone:hover{
+    transform: scale(1.2);
+}
+.wisam{
+    position: absolute;
+    width:25%;
+    top:40%;
+    left:40%;
+}
+.divAfter{
+    width: 80%;
+    margin: 0px auto;
+}
+.img-before{
+    opacity: 1;
+}
+.img-before:hover{
+    opacity: 0.6;
+}
+.content{
+    display: none;
+}
+.slider.round:before {
+    border-radius: 50%;
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+.img-before:hover .content{
+    display: inline;
+}
+.wisam{
+    position: absolute;
+    width:25%;
+    top:40%;
+    left:40%;
+}
+
+.responsiveCarousal{
+    height:650px !important;
+    width: 100%;
+    }
+
+@media only screen and (max-width: 770px) {
+    .award{
+        height: 100%;
+    }
+      .arrows{
+          display: none;
+      }
+      .pagination{
+          display: auto;
+      }
+      .findUsPa{
+          display: block;
+          text-align: center;
+      }
+      .responsiveCarousal{
+          height: 400px !important;
+          width: 100% !important;
+      }
+      .responsiveImg{
+          width: 100% !important;
+          height: 100% !important;
+      }
+      .first{
+          width: 100% !important;
+      }
+      .second{
+          display: none !important;
+      }
+      .paragraph{
+          display: none;
+      }
+      .newParagraph{  
+          display: block;
+          text-align: center;
+      }
+      .divAfter{
+          width: 100% !important;
+      }
+  }
+  @media (max-width: 800px) {
+    .containerTable {
+       width: 100%;
+    }
+    .facts{
+        height: 6000px;
+    }
+    
+ }  
+ .facts{
+    height: 600px;
+}
+
+  @media only screen and (max-width: 1000px) {
+   
+    
+    .responsiveImg{
+        width: 100% !important;
+        height: 100% !important;
+    }
+      .arrows{
+          display: auto;
+      }
+      .pagination{
+          display: none;
+      }
+      .findUsPa{
+          display: block;
+          text-align: center;
+      }
+      .responsiveCarousal{
+          height:400px !important;
+          width: 100%;
+      }
+
+      .paragraph{
+          display: none;
+      }
+      .newParagraph{
+          display: block;
+          text-align: center;
+      }
+      .divAfter{
+          width: 90% !important;
+      }
+  }
+  @media only screen and (max-width: 800px){
+    .facts{
+        height: 1000px;
+    }
+    
+    /* .award{
+        height: 900px !important;
+    } */
+}
+  .alertFont{
+    font-family: "AlertNotice";
+}
+.cardFooter{
+    font-family: "cardFooterFonts"
+}
+.card{
+    transition: all .2s ease-in-out; 
+}
+.card:hover{
+    transform: scale(1.02); 
+}
+h2 {
+ width: 100%; 
+ text-align: center; 
+ border-bottom: 1px solid #000; 
+ line-height: 0.1em;
+ margin: 10px 0 20px; 
+} 
+
+h2 span { 
+background:#fff; 
+padding:0 10px; 
+}
+.harlow {
+    font-family: "myFirstFont";
+
+}
+.Info{
+    background-color: #f1f1f1;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.RE{
+transition: all .4s ease-in-out; 
+background-color: #ffedfb;
+margin-top: 10px;
+cursor: pointer;
+border: 3px solid #f7f7f7;
+}
+.RE:hover{
+transform: scale(1.2); 
+}
+.RE:hover .p-after{
+display: inline-block;
+padding-top: 10px;
+}
+.RE:hover .p-after2{
+display: block;
+
+}
+.p-after2{
+display: none;
+background-color: #ffcaf3;
+border: 0px;
+}
+.RE img{
+display: block;
+}
+.RE:hover img{
+display: none !important;
+}
+.RE:hover .PA{
+display: none;
+}
+.PA{
+padding-top: 8px;
+}
+.p-after{
+display: none;
+}
+.img-before{
+
+}
+.newParagraph{
+display: none;
+}
+
+
+.arrows{
+display: auto;
+}
+.pagination{
+display: none;
+}
+.findUsPa{
+    display: none;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .cakeImg{
+    background-image: url("file:///C:/Users/abdal/Desktop/gulpProject/src/images/photo-1426869884541-df7117556757.jfif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+.facts{
+    background-image: url('../../images/zoDNhzE-cup-cake-wallpaper.jpg');
+}
+.containerTable {
+    width: 90%;
+    
+ }
+ .responsiveImg:hover{
+    opacity: 0.6;
+ }
